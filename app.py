@@ -38,19 +38,28 @@ tab1, tab2, tab3 = st.tabs(["📝 Study Notes", "🎥 Video Tutorial", "🎯 Qui
 with tab1:
     st.header(f"Notes: {chapter}")
     
-    # Example logic for showing diagrams based on subject
+    # Logic for showing specific diagrams
     if "Cell" in chapter:
         st.info("Visualizing the building blocks of life...")
         
+        st.write("Organelles like the nucleus and mitochondria are essential for cell survival.")
+
     elif "Force" in chapter or "Motion" in chapter:
         st.info("Applying Newton's Laws...")
         
+        st.latex(r"F = ma")
+
     elif "Market Equilibrium" in chapter:
-        
-    elif "Redox" in chapter:
+        st.write("Market equilibrium occurs where Demand equals Supply.")
         
 
-    st.write("Detailed notes for this chapter are currently being updated. Please check back soon!")
+    elif "Redox" in chapter:
+        st.write("Redox involves Oxidation (loss of electrons) and Reduction (gain of electrons).")
+        
+
+    else:
+        st.write("Detailed notes for this chapter are currently being updated. Please check back soon!")
+    
     st.button("Download PDF Version")
 
 with tab2:
