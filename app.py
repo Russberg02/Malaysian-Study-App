@@ -10,7 +10,7 @@ st.markdown("""
     .main { background-color: #f5f7f9; }
     .stSelectbox label { font-weight: bold; color: #1E3A8A; }
     </style>
-    """, unsafe_allow_stdio=True)
+    """, unsafe_allow_html=True)
 
 # --- SIDEBAR ---
 st.sidebar.image("https://img.icons8.com/clouds/200/education.png")
